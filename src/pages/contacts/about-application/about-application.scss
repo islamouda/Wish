@@ -1,0 +1,33 @@
+page-about-application {
+    .myview{
+        background-image: url("../../assets/imgs/background.png");
+        background-size: cover;
+    }
+    .textiraq{
+      background-color: hsla(205, 100%, 32%, 0.062);
+      padding: 2px;
+      border: 2px;
+      border-radius: 20px;
+      border-style: solid;
+      border-color: #ffa600 #ffa600 #0060a3 #0060a3;
+      margin-top: 25%;
+  }
+  
+  .circlepic{
+    position: static;
+    margin-top: 20px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     -webkit-box-shadow: transparent; 
+    box-shadow: transparent;
+  }
+    p { 
+        font-family: 'Droid Arabic Kufi', serif;
+        font-weight: normal; 
+        font-style: normal;
+        margin: 5% 1%; 
+     }
+
+}

@@ -1,0 +1,44 @@
+page-profile-wish-edit {
+
+    .font{
+        font-size: large;
+      font-family: 'Droid Arabic Kufi', serif;
+      text-align: right !important;
+      }
+  
+     .hederr{
+      .toolbar-background{
+        background: #0060a3;
+      }
+      .toolbar-title{
+        text-align: right;
+        color: white;
+      }
+      .back-button{
+        color: white;
+      }
+    }
+
+
+    .nameicon{
+        color: #0060a3;
+      }
+
+     .list1{
+      margin-top: 30px;
+      margin-bottom: 30px;
+     } 
+
+     .card{
+      box-shadow: 1px 2px 33px 3px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+      border-radius: 20px;
+      margin-top: 80px;
+     }
+.button1{
+  width: 70%;
+ margin-left: auto;
+ margin-right: auto;
+ border-radius: 20px;
+ margin-bottom: 20px;
+}
+}

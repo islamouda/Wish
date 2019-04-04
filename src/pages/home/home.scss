@@ -1,0 +1,80 @@
+page-home {
+    .all{
+        background: linear-gradient(to bottom, #0060a3 25%, #ffffff 20%);
+        
+    }
+    .font{
+        font-size: large;
+        font-family: 'Droid Arabic Kufi', serif;
+        color: white;
+        font-style: normal;
+    }
+    
+    .grid1{
+        margin-top: 5%;
+    }
+    
+    #wishA{
+        
+        height: 50px;
+        width: auto;
+        margin: 5px 5px 5px 15px;
+        display: block;   
+    }
+    
+    .cardtest{
+        height: auto;
+        margin: 0px;
+        width: 100%;
+        border-radius: 40px 40px 0px 0px;
+        background-color: #fcfcfc;
+        padding: 10% 5%;
+    }
+    
+    .items{
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 20px;
+      border-color: #0060a3;
+      padding-left: inherit;
+      ion-thumbnail[item-start] {
+         margin: auto;
+      }
+      .button-inner{
+          margin-left: 30px;
+        } 
+        
+    }
+    
+    .lable{
+      margin: 0px !important;
+    }  
+    .imageWish{
+       display: block;
+       width: 90px !important;
+       height: 90px !important;
+    }
+    .searchbar-search-icon{
+    right: 15px !important;
+    position: absolute !important;
+    display: block !important;
+    left: auto !important;
+    }
+    
+    
+    .searchbar-input{
+    text-align: right !important;
+    padding: 6px 40px !important;
+    }
+    
+    
+    .searchbar-clear-icon{
+    right: auto !important;
+    // position: absolute !important;
+    // display: block !important;
+    left: 15px !important;
+    }
+    
+}
+
+

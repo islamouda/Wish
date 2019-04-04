@@ -1,0 +1,87 @@
+page-profile {
+  .font{
+    font-size: large;
+    font-family: 'Droid Arabic Kufi', serif;
+    color: white;
+    font-style: normal;
+    }
+    .header1{
+      .toolbar-background{
+        background-color: #0060a3;
+      }
+.paddingcol{
+     padding: 0px;
+  }
+
+ .icons{
+   font-size: 25px;
+   justify-content: flex-end;
+    
+}
+    
+      .iconedit{
+        float: right;
+        margin: 2% 4%;
+        padding-top: 15px;
+    
+      }  
+    
+    
+      .imagprofile{
+        padding-left: 0px;
+        background-color: transparent; 
+        .item-ios.item-block .item-inner {
+            padding-right: 0px;
+            border-bottom: 0px;
+            border-bottom: transparent;
+          
+        }
+        
+        .item-md.item-block .item-inner {
+          padding-right: 8px;
+        border-bottom: transparent;
+        }
+        }
+ h2{
+  color: white;
+  font-style: normal;
+ }
+ }
+  .imageprofile{
+      border: 2px solid #ffffff;
+      width: 50px !important;
+      height: 50px !important;
+    }
+  .content{
+      margin-top: 20px;
+      padding: 0px;
+
+        .scroll-content {
+              padding: 5px !important; 
+            }
+    }
+    .but{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding: auto; 
+    }
+    .items{
+      border-style: solid;
+      // border-width: 1px;
+      border-radius: 20px;
+      // border-color: #e13838;
+      box-shadow: 1px 10px 22px 2px rgba(0, 0, 0, 0.14), 1px 1px 1px 0px rgba(0, 0, 0, 0.2), 3px 0px 2px 0 rgba(0, 0, 0, 0.12);
+  
+      ion-thumbnail[item-start] {
+         margin: auto;
+      }
+      margin: 15px 0px;
+    }
+    .fab1{
+      margin-bottom: 20px;
+    }
+    .list{
+      margin: 0px 15px !important;
+    }
+}

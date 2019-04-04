@@ -1,0 +1,52 @@
+ <ion-header class="font header1">
+<ion-navbar> 
+  <div *ngFor="let itempro of itemsprofile$   | async json">
+      <ion-grid class="paddingcol">
+          <ion-row class="icons">
+            <ion-col class="paddingcol imagprofile" col-6>
+                  <ion-item class="imagprofile">
+                      <ion-avatar item-start>
+                        <img class="imageprofile" src="https://firebasestorage.googleapis.com/v0/b/wish-74721.appspot.com/o/Users%2F{{itempro.payload.val().image}}.jpg?alt=media&token=36894391-634c-486f-b60e-a45990b87ee4">
+                      </ion-avatar>
+                      <h2>{{itempro.payload.val().name}}</h2>
+                    </ion-item>
+            </ion-col>
+            <ion-col class="paddingcol" col-6 >
+              <ion-icon (click)="Logout()" class="iconedit" name="log-out"></ion-icon>
+              <ion-icon  class="iconedit" ios="ios-create" md="md-person" (click)="ProfileSelected(
+                itempro.payload.key,
+                itempro.payload.val().name,
+                itempro.payload.val().email, 
+                itempro.payload.val().phone,
+                itempro.payload.val().province,
+                itempro.payload.val().age,
+                itempro.payload.val().image,
+                itempro.payload.val().uid,
+                itempro.payload.val().admin)"></ion-icon>
+              <ion-icon *ngIf="itempro.payload.val().admin == true" (click)="GoToMap()" class="iconedit" name="md-pin"></ion-icon>
+
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+  </div>
+</ion-navbar> 
+</ion-header> 
+<ion-content padding class="content font" dir="rtl"> 
+<ion-list  *ngFor="let itempro of itemsprofile$   | async json">
+    <ion-item class="items" *ngFor="let item of items$   | async json" >
+      <ion-thumbnail item-start>
+        <img src="https://firebasestorage.googleapis.com/v0/b/wish-74721.appspot.com/o/Wish%2F{{ item.payload.val().image }}.jpg?alt=media&token=24431c8b-c9ac-423a-8a86-6963d7645c60">
+      </ion-thumbnail>      
+      <h3> {{item.payload.val().title}}</h3>
+      <button ion-button clear item-end (click)="itemSelected(item.payload.key,item.payload.val().uidUser,item.payload.val().title,item.payload.val().subject,item.payload.val().image,item.payload.val().status)"
+      >المزيد</button>
+    </ion-item>
+  </ion-list>
+  <!-- <button ion-fab (click)="Logout()" class="iconedit" name="log-out"></button> -->
+
+  <ion-fab class="fab1" right bottom>
+    <button ion-fab color="danger" (click)="gotoaddwishs()"><ion-icon name="add"></ion-icon></button>
+
+  </ion-fab>    
+</ion-content>

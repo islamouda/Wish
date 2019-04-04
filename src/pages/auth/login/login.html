@@ -1,0 +1,146 @@
+
+
+<ion-content padding class="myview font">
+
+  <ion-list >
+  <img class="iconlogin" src="../../assets/imgs/login1.png" alt="">
+  </ion-list>
+  <div class="inputemailpass">
+    <ion-item  class="emailpass">
+        <ion-icon class="iconcolor" item-left name="mail"></ion-icon>
+      <ion-input  fixed type="email" [(ngModel)]="user.email" placeholder="Your Email"></ion-input>
+    </ion-item>
+    <ion-item class="emailpass">
+        <ion-icon class="iconcolor" item-left name="key"></ion-icon>
+      <ion-input  fixed type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+    </ion-item>
+  </div>
+  <button class="buttonstyle" (click)="login(user)"	[disabled]="!user.password || !user.email" ion-button round round outline>دخول</button>
+  <h1 (click)="register()">تسجيل جديد</h1>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+<!-- 
+<ion-content padding>
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>email</ion-label>
+          <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+
+      <button ion-button color="danger" outline (click)="login(user)">login</button>
+      <button ion-button  (click)="register()">register</button>
+      <button ion-button  color="danger" (click)="logINFacebook()">Facebook</button>
+      <button ion-button   outline (click)="logINGoogle()">Google</button>
+      <button ion-button (click)="logout()">logout</button>
+       <div *ngIf="logginIn" >
+        <p>{{ ress.email}}</p>
+        <p>{{ ress.name}}</p>
+        <p>{{ ress.gender}}</p>
+        <img src="{{ ress.picture.data.url}}"/> 
+        
+        </div> 
+
+        <ion-card *ngIf="userData">
+          <ion-card-header>{{ userData.username }}</ion-card-header>
+          <img [src]="userData.picture" />
+          <ion-card-content>
+            <p>Email: {{ userData.email }}</p>
+            <p>First Name: {{ userData.first_name }}</p>
+          </ion-card-content>
+        </ion-card>
+</ion-content> -->
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <ion-content >
+
+  
+  <img class="imagehade" src="../../../assets/imgs/2.jpg" alt="">
+  
+  <h2 class="Login" text-center>Login</h2>
+  
+  
+  
+  <ion-list padding class="buttonFG"> 
+  
+    <ion-item>
+        <ion-label><ion-icon name="md-mail"></ion-icon></ion-label>
+        <ion-input type="email" [(ngModel)]="user.email" placeholder="Your Email"></ion-input>
+
+  
+    </ion-item>
+  <br>
+  <ion-item>
+      <ion-label><ion-icon name="md-key"></ion-icon></ion-label>
+      <ion-input type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+ 
+  </ion-item> 
+  
+
+  <button ion-button color="light" round  class="center" (click)="login(user)"	[disabled]="!user.password || !user.email" >GO!</button>
+
+  <h6 text-center	style="color:#3c579e" (click)="register()">Create an Account</h6>
+  </ion-list>
+  
+    <ion-row class="bottomrow">
+      <ion-col col-6>
+        
+          <button class="buttonFG" ion-button icon-start round>
+              <ion-icon name='logo-facebook'></ion-icon>
+              Facebook
+            </button>
+  
+  </ion-col>
+      <ion-col col-6>
+        
+          <button class="buttonFG" ion-button color="danger" icon-start round>
+              <ion-icon name='logo-googleplus'></ion-icon>
+              Google
+            </button>
+  
+      </ion-col>
+    </ion-row>
+  
+  
+  
+  
+  
+  </ion-content> -->

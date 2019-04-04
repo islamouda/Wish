@@ -1,0 +1,48 @@
+<ion-header class="font hederr">
+
+  <ion-navbar>
+    <ion-title>اضافة امنية </ion-title>
+
+
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="main" dir="rtl">
+  
+
+        <ion-list class="input1" inset>
+      
+            <ion-item>
+                <ion-icon  class="nameicon" name="heart" item-start></ion-icon>
+                
+                <ion-input type="text" placeholder="العنوان" [(ngModel)]='wishItem.title'></ion-input>
+            </ion-item>
+        </ion-list >
+        <ion-list class="input2" inset>
+          <ion-item >
+              <ion-icon class="nameicon" name="paper" item-start></ion-icon>
+            <ion-textarea autosize type="text" placeholder="تفاصيل الامنية ..." [(ngModel)]='wishItem.subject'></ion-textarea>
+          </ion-item>
+        </ion-list>
+      
+        <ion-card class="card1" >
+        
+            <ion-card-content class="camera" (click)="takePhoto()">
+              <!-- <ion-icon class="imageprofilecam" *ngIf='display && !currentImage' name="md-camera"></ion-icon>-->
+              <img src="imageprofiles" *ngIf='display && !currentImage' src="../../../assets/imgs/cam.png" alt="">
+              <img class="imageprofile" *ngIf='display && currentImage' src="{{currentImage}}"/>
+               
+            </ion-card-content>
+          </ion-card> 
+      
+       
+          <ion-grid>
+            <ion-row>
+              <ion-col col-12>
+                <button ion-button round  color="danger" class="but" (click)=" addwishitem(wishItem)" 
+                [disabled]="!wishItem.subject || !wishItem.title" >اضافة</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+</ion-content>

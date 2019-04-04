@@ -1,0 +1,23 @@
+page-wish-achieved {
+    .imageWish{
+        width: auto;
+        // max-height: 10%;
+        border-radius: 0;
+        // overflow: hidden;
+        width: 100%;
+        height: 200px;
+        // display: block;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .label-ios {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .card-ios .item-ios.item-block .item-inner {
+        border: 0;
+        padding: 0px;
+    }
+}

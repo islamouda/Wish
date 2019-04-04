@@ -1,0 +1,58 @@
+<ion-header class="header1">
+
+  <ion-navbar>
+    <ion-title>{{itemWish.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content  dir="rtl" class="font">
+  <img class="image" src="https://firebasestorage.googleapis.com/v0/b/wish-74721.appspot.com/o/Wish%2F{{ itemWish.image }}.jpg?alt=media&token=24431c8b-c9ac-423a-8a86-6963d7645c60">
+<ion-item no-lines >
+    <ion-avatar item-start>
+        <img class="imageprofile" src="https://firebasestorage.googleapis.com/v0/b/wish-74721.appspot.com/o/Users%2F{{itemUser.image}}.jpg?alt=media&token=440b4072-ffd7-44a9-81e4-68d6620e3499">   
+    </ion-avatar>
+    <h2>{{itemUser.name}}</h2>
+    <p>العمر : {{itemUser.age}}</p>
+<!-- <ion-fab class="fabs" top right  item-end>
+    <button ion-fab mini color="danger"><ion-icon name="md-share"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab (click)="SharingFacebook()" class="facebook"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab  class="insta" ><ion-icon name="logo-instagram"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab> -->
+  </ion-item>
+
+  <ion-card class="cards">
+
+    <ion-card-header>
+        <ion-item class="itemcolor">
+
+            <ion-icon class="nameicon" name="md-contact" item-start></ion-icon>
+            <ion-label > تفاصيل الامنية</ion-label>
+         
+          </ion-item>
+     
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p text-justify>  {{itemWish.subject}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="cards">
+    <ion-card-header>
+ <ion-item class="itemcolor">
+   <ion-icon class="phoneicon" name="md-call" item-start></ion-icon>
+   <ion-label >{{itemUser.phone}}</ion-label>
+ </ion-item>
+    </ion-card-header>
+  </ion-card>
+  <ion-card class="cards">
+      <ion-card-header>
+   <ion-item class="itemcolor">
+     <ion-icon class="provinceicon" name="md-globe" item-start></ion-icon>
+     <ion-label >{{itemUser.province}}</ion-label>
+   </ion-item>
+      </ion-card-header>
+    </ion-card>
+  <ion-item>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-content padding class="myview font">
+  <ion-list >
+  <img class="iconlogin" src="../../../assets/imgs/registration.png" alt="">
+  </ion-list>
+  <div class="inputemailpass">
+    <ion-item  class="emailpass">
+        <ion-icon class="iconcolor" item-left name="mail"></ion-icon>
+      <ion-input  fixed type="email" [(ngModel)]="user.email" placeholder="Your Email"></ion-input>
+    </ion-item>
+    <ion-item class="emailpass">
+        <ion-icon class="iconcolor" item-left name="key"></ion-icon>
+      <ion-input  fixed type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
+    </ion-item>  
+  </div>
+  <button class="buttonstyle" (click)="register(user)"	[disabled]="!user.password || !user.email" ion-button round round outline>دخول</button>
+</ion-content>

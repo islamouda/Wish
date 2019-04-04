@@ -1,0 +1,106 @@
+page-wish-add {
+    .main{
+        // background: linear-gradient(to right, #0060a3 50%, #ffffff 50%);
+      }
+      .font{
+        font-size: large;
+      font-family: 'Droid Arabic Kufi', serif;
+      text-align: right !important;
+      }
+  
+     .hederr{
+      .toolbar-background{
+        background: #0060a3;
+      }
+      .toolbar-title{
+        text-align: right;
+        color: white;
+      }
+      .back-button{
+        color: white;
+      }
+     }
+      .input1{
+        margin: 5% 10% 5% 10% !important ;
+        border-style: solid;
+        border-width: 3px !important ;
+        border-color: #0060a3;
+
+      
+        
+      }
+      .input2{
+        margin: 0% 10% !important;
+        border-style: solid;
+        border-width: 3px !important;
+        border-color: #0060a3;
+      }
+      textarea{
+        height:200px !important;	
+      }
+      
+      .text-input{
+        text-align: right;
+      }
+    
+    
+      .card1{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-style: solid;
+        border-width: 3px !important;
+        border-color: #0060a3;
+
+      
+          .imageprofilecam{
+            width: auto; 
+          
+            opacity: 0.5;
+            margin: 25%;
+            font-size: 300%;
+            // padding: 10px;            
+            text-align: center;
+            display: block;
+            align-items: center;
+          }
+          .imageprofile{
+            width: 110px !important;
+            height: 110px !important;
+
+          }
+          .imageprofiles{
+            width: 110px !important;
+            height: 110px !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding-top: 20px
+
+          }
+      
+
+
+      .camera{
+        width: 110px ;
+        height: 110px ;
+        padding: 0px;
+      }
+      
+    }
+    
+      .but{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: large;
+      }
+      
+      .nameicon{
+        color: #f53d3d;
+      }
+
+}

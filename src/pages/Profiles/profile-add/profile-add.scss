@@ -1,0 +1,268 @@
+page-profile-add {
+//     .icon_Profile{
+//         font-size: 2rem;
+//     }
+    
+    
+     
+//     //   .inputpad{
+    
+//     //     padding: 16px;
+//     //   }
+    
+    
+      
+      
+    
+//     //     .item-ios.item-block .item-inner {
+//     //       padding-right: 8px;
+//     //       padding-right: 8px;
+//     //       border: 1px solid #1a0377;
+//     //   }
+    
+    
+//     //   .marginlab{
+//     //     margin-left: 6px;
+//     //   }
+    
+
+
+//     .font{
+//       font-size: large;
+//     font-family: 'Droid Arabic Kufi', serif;
+//     }
+
+//     .imageprofile{
+//       width: 100px !important;
+//       height: 100px !important;
+//       border: 2px solid #ffffff;
+//       border-radius: 50%;
+//       box-shadow: 0 0 10px #0060a3;
+//       display: inline-block;
+//       margin-left: auto;
+//       margin-right: auto;
+//     }
+
+
+//     .camera{
+//       font-size: x-large;
+//       color: rgb(158, 22, 22);
+//     }
+
+//     .nameicon{
+//       color: #0060a3;
+//     }
+//     .phoneicon{
+//       color: #0060a3;
+
+//     }
+
+//     .provinceicon{
+//       color: #f3aa3f;
+
+//     }
+
+//     .ageicon{
+//       color: #e13838;
+
+//     }
+
+
+//     .save{
+//       margin-left: auto;
+//     margin-right: auto;
+//     display: block;
+//     position: relative;
+//     font-size: medium;
+
+//   }
+
+//   .item-ios .item-button {
+//     padding: 10px;
+//     height: 35px;
+//     font-size: 1.3rem;
+// }
+
+// .list-ios > .item-block:first-child {
+//   border-top: 0;
+// }
+// .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+//   border-bottom: 0;
+// }
+
+
+
+
+
+
+// .ion-app.ios [padding] .scroll-content {
+//    padding: 0px;
+// }
+
+
+
+.font{
+  font-size: large;
+font-family: 'Droid Arabic Kufi', serif;
+text-align: right !important;
+}
+
+.top-heder{
+  .toolbar-background{
+    background: #0060a3;
+  }
+  .toolbar-title{
+    text-align: right;
+    color: white;
+  }
+  .back-button{
+    color: white;
+  }
+ }
+
+ .card{
+  box-shadow: 1px 2px 33px 3px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+  background-image: url("../../assets/imgs/background.png");
+  background-size: cover;  
+}
+
+.listprofile{
+  margin-top: 17px;
+  background-color: transparent;
+}
+
+
+.back{
+  background-color: transparent;
+}
+
+.imageprofile{
+  width: 75px !important;
+  height: 75px !important;
+  border: 2px solid #0060a3;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon_Profile{
+      font-size: 2rem;
+  }
+  .item-md.item-input.input-has-focus .item-inner {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.list-md .item-input.input-has-focus:last-child {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.list-md .item-input.input-has-focus:last-child .item-inner {
+  box-shadow: none;
+}
+
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child .item-inner {
+  box-shadow: none;
+}
+
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+.camera{
+    font-size: x-large;
+    color: rgb(158, 22, 22);
+  }
+
+  .nameicon{
+    color: #0060a3;
+  }
+  .phoneicon{
+    color: #0060a3;
+
+  }
+
+  .provinceicon{
+    color: #ffa600;
+
+  }
+
+  .ageicon{
+    color: #e13838;
+
+  }
+
+
+  .save{
+    margin-bottom: 10px;
+
+    margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  position: relative !important;
+  font-size: medium !important;
+
+}
+
+.item-ios .item-button {
+  padding: 10px;
+  height: 30px;
+  font-size: 1.3rem;
+}
+
+.list-ios > .item-block:first-child {
+border-top: 0;
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+border-bottom: 0;
+}
+.itemsa{
+.item-inner{
+  border-bottom: 0px !important; 
+}
+
+.items1{
+  margin-top: auto;
+  padding: 0px !important;
+  margin-top: auto !important;
+
+}
+}
+
+
+.items1{
+margin-top: auto;
+padding: 10px !important;
+margin-top: auto !important;
+}
+
+
+.ion-app.ios [padding] .scroll-content {
+ padding: 0px;
+}
+
+.item{
+  .item-inner{
+    margin-left:0px !important;
+  }
+}
+
+
+
+}

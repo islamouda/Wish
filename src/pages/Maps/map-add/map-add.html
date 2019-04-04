@@ -1,0 +1,25 @@
+<ion-header class="font hederr">
+    <ion-navbar>    
+      <ion-title  >اضافة موقع</ion-title>   
+    </ion-navbar>
+  </ion-header  >
+<ion-content padding>
+  <ion-list class="fonta" dir="rtl"> 
+    <ion-item>
+      <ion-label floating>العنوان</ion-label>
+      <ion-input [(ngModel)]='locations.info' type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>خطوط العرض</ion-label>
+      <ion-input [(ngModel)]='locations.latitude' type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>خطوط الطول</ion-label>
+      <ion-input [(ngModel)]='locations.longitude' type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button full class="buttonadd" color="danger" (click)="addLocation(locations)">اضافة</button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,77 @@
+page-contact {
+  .card-background-page {
+    background-color: #f7f7f7;
+      ion-card {
+        position: relative;
+        text-align: center;
+}
+
+  .font{
+    font-size: large;
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 22px;
+    font-variant-caps: all-petite-caps;
+  }
+
+  .background-Logo{
+    width: 100%;
+    height: 15%;
+    background-color: #0060a3;
+    display: inline-grid;
+  }
+  .codelogo{
+    position: static;
+    margin-top: 20px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     -webkit-box-shadow: transparent; 
+    box-shadow: transparent;
+  }
+  .button1{
+    height:  7rem;
+    width: 100%;
+    font-size: 150%;
+    font-family: 'Droid Arabic Kufi', serif;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: linear-gradient(to top left, #A54846 0%, #F25F5C 65%);
+  }
+  .button2{
+    height:  7rem;
+    width: 100%;
+    font-size: 150%;
+    font-family: 'Droid Arabic Kufi', serif;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: linear-gradient(to bottom right, #f9b434 0%, #d89d2e 100%);
+
+  }
+  .button3{
+    height:  7rem;
+    width: 100%;
+    font-size: 150%;
+    font-family: 'Droid Arabic Kufi', serif;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: linear-gradient(to top left, #0060a3 0%, #208cd8 65%);
+
+  }
+  .scroll-content{
+    margin-bottom: 0px !important;
+  }
+
+  .wishicon{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+  }
+  .fixed-content{
+    margin-bottom: 0px !important; 
+  }
+
+      }
+}

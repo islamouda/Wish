@@ -1,0 +1,74 @@
+<ion-header class="font top-heder">
+  <ion-navbar>
+    <ion-title>الصفحة الشخصية</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding dir="rtl" class="font" >
+<ion-card class="card"> 
+    <ion-item class="listprofile">
+      <ion-avatar item-start class="back">
+        <img class="imageprofile" *ngIf='display && currentImage' src="{{currentImage}}"/>
+        <img class="imageprofile"  *ngIf='display && !currentImage'  src="https://firebasestorage.googleapis.com/v0/b/wish-74721.appspot.com/o/Users%2F{{image}}.jpg?alt=media&token=36894391-634c-486f-b60e-a45990b87ee4">
+      </ion-avatar>
+      <button class="icon_Profile" ion-button icon-start clear small (click)="takePhoto()">
+        <ion-icon  name="md-camera"></ion-icon>
+      </button>
+    </ion-item>
+  <ion-card-content >
+      <ion-item class="back"  >
+        <ion-icon class="nameicon" name="md-contact" item-start></ion-icon>
+        <ion-label >الاسم :</ion-label>
+        <ion-input class="iteminner" type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+    <ion-item class="back">
+        <ion-icon class="phoneicon" name="md-call" item-start></ion-icon>
+        <ion-label >رقم الهاتف :</ion-label>
+        <ion-input  type="text" [(ngModel)]="phone"></ion-input>
+    </ion-item>
+    <ion-item class="itemsa back"> 
+        <ion-icon class="provinceicon" name="md-globe" item-start></ion-icon>
+        <ion-label>المحافظة</ion-label>
+         <ion-select [(ngModel)]="province" [selectOptions]="musicAlertOpts">
+        <ion-option>بغداد</ion-option>
+        <ion-option>البصرة</ion-option>
+        <ion-option>أربيل</ion-option>
+        <ion-option>الأنبار</ion-option>
+        <ion-option>بابل</ion-option>
+        <ion-option>دهوك</ion-option>
+        <ion-option>القادسية</ion-option>
+        <ion-option>ديالى</ion-option>
+        <ion-option>ذي قار</ion-option>
+        <ion-option>السليمانية</ion-option>
+        <ion-option>صلاح الدين</ion-option>
+        <ion-option>كركوك</ion-option>
+        <ion-option>كربلاء</ion-option>
+        <ion-option>المثنى</ion-option>
+        <ion-option>ميسان</ion-option>
+        <ion-option>النجف</ion-option>
+        <ion-option>نينوى</ion-option>
+        <ion-option>واسط</ion-option>
+      </ion-select> 
+    </ion-item>
+<ion-item class="itemsa back">
+        <ion-icon class="ageicon"  name="md-heart" item-start></ion-icon>
+        <ion-label>العمر</ion-label>
+
+        <ion-label>{{age}}</ion-label>
+  
+    </ion-item>    
+  </ion-card-content>
+    <ion-item class="items1 back">
+        <ion-range class="items1" min="1" max="100" step="1" pin="true"   [(ngModel)]="age" > 
+          <ion-icon range-right small color="danger" name="md-heart"></ion-icon>
+          <ion-icon range-left  color="danger" name="md-heart"></ion-icon>
+        </ion-range>
+      </ion-item>  
+    <ion-row>
+      <ion-col>
+        <button ion-button class="save" color="danger"  (click)="UpdataUserProfile(name,phone,province,age,image,uid,admin)" >        
+          حفظ
+         </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
